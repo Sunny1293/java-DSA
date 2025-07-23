@@ -1,17 +1,19 @@
-package com.dsa;
+package com.sorting;
+
 import java.util.Arrays;
 
 public class MergeSort {
     public static void main(String[] args) {
-        int[] arr = {38, 27, 43, 3, 9, 82, 10};
+
+        int[] arr = { 38, 27, 43, 3, 9, 82, 10 };
         System.out.println("Original array:" + Arrays.toString(arr));
-
         mergeSort(arr, 0, arr.length - 1);
-
         System.out.println("Sorted array:" + Arrays.toString(arr));
+
     }
 
     public static void mergeSort(int[] arr, int left, int right) {
+        // Base case: if the array has one or no elements, it's already sorted
         if (left < right) {
             int mid = left + (right - left) / 2;
 
@@ -25,8 +27,8 @@ public class MergeSort {
     }
 
     private static void merge(int[] arr, int left, int mid, int right) {
-      
-     int[] temp = new int[right - left + 1];
+
+        int[] temp = new int[right - left + 1];
         int i = left; // Starting index for left subarray
         int j = mid + 1; // Starting index for right subarray
         int k = 0; // Starting index for merged subarray
@@ -54,7 +56,7 @@ public class MergeSort {
         for (i = left, k = 0; i <= right; i++, k++) {
             arr[i] = temp[k];
         }
-        
+
     }
 
 }
