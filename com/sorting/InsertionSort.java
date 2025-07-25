@@ -1,10 +1,12 @@
+import java.util.Arrays;
+
 public class InsertionSort {
 
     public static void main(String[] args) {
         int[] arr = { 64, 25, 12, 22, 11 };
-        System.out.println("Original array: " + java.util.Arrays.toString(arr));
+        System.out.println("Original array: " + Arrays.toString(arr));
         insertionSort(arr);
-        System.out.println("Sorted array: " + java.util.Arrays.toString(arr));
+        System.out.println("Sorted array: " + Arrays.toString(arr));
     }
 
     private static void insertionSort(int[] arr) {
