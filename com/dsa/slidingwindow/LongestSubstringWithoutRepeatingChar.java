@@ -1,6 +1,5 @@
-package com.slidingwindow;
-
-public class LongestSubstringWithoutRepeatingChar {
+package com.dsa.slidingwindow;
+class LongestSubstringWithoutRepeatingChar {
 
     public static void main(String[] args) {
         String s = "abcabcbb";

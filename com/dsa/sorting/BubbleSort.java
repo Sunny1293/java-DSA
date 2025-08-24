@@ -1,6 +1,7 @@
+package com.dsa.sorting;
 import java.util.Arrays;
 
-public class BubbleSort {
+class BubbleSort {
 
     public static void main(String[] args) {
         int[] arr = {64, 25, 12, 22, 11};
@@ -21,7 +22,7 @@ public class BubbleSort {
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
                     swapped = true;
-                }+
+                }
             }
             // If no two elements were swapped by inner loop, then break
             if (!swapped) break;

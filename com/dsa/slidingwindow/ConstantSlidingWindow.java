@@ -1,5 +1,4 @@
-package com.slidingwindow;
-
+package com.dsa.slidingwindow;
 import java.util.Arrays;
 
 class ConstantSlidingWindow {
